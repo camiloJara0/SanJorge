@@ -1,0 +1,171 @@
+QUIÉNES
+S O M O S
+LA CLÍNICA SAN JORGE ES UNA INSTITUCIÓN DE SALUD RECONOCIDA POR
+SU COMPROMISO CON LA CALIDAD Y LA EXCELENCIA EN EL CUIDADO DE
+SUS PACIENTES. DESDE NUESTROS INICIOS EN EL MUNICIPIO DE PUEBLO
+BELLO, CESAR, HEMOS TRABAJADO INCANSABLEMENTE PARA BRINDAR
+ATENCIÓN MÉDICA ESPECIALIZADA, APOYADOS POR UN EQUIPO DE
+PROFESIONALES ALTAMENTE CALIFICADOS Y COMPROMETIDOS CON EL
+BIENESTAR INTEGRAL DE LAS PERSONAS.
+EN NUESTRA SEDE CALI, HEMOS DISEÑADO UN MODELO DE ATENCIÓN
+ENFOCADO EN OFRECER CONSULTA EXTERNA, TRANSPORTE ASISTENCIAL
+Y SERVICIOS DE MEDICINA GENERAL. NUESTRA ESPECIALIDAD RADICA EN LA PREVENCIÓN Y
+PROMOCIÓN DE LA SALUD, A TRAVÉS DE INTERVENCIONES PERSONALIZADAS QUE BUSCAN NO
+SOLO ATENDER, SINO MEJORAR LA CALIDAD DE VIDA DE QUIENES CONFÍAN EN NOSOTROS.
+EN LA CLÍNICA SAN JORGE, ESTAMOS CONVENCIDOS DE QUE LA SALUD ES UN PILAR FUNDAMENTAL PARA EL
+DESARROLLO INDIVIDUAL Y COLECTIVO, POR LO QUE TRABAJAMOS CON ÉTICA, RESPETO Y HUMANIDAD,
+ASEGURANDO UN TRATO CÁLIDO Y PROFESIONAL EN CADA INTERACCIÓN. NUESTRO OBJETIVO ES SER UN
+ALIADO CONFIABLE EN EL CUIDADO DE SU SALUD, MARCANDO LA DIFERENCIA CON UN SERVICIO CERCANO,
+SEGURO Y DE ALTA CALIDAD.
+CLÍNICA SAN JORGE, CUIDANDO TU SALUD CON COMPROMISO Y EXCELENCIA.
+MISION
+MISION
+LA CLINICA SAN JORGE SAS, ESTÁ
+COMPROMETIDA CON LA CONDICIÓN Y
+SEGURIDAD DEL PACIENTE, LA FAMILIA, EL
+MEDIO AMBIENTE, EL BIENESTAR LABORAL Y LA
+FORMACIÓN ACADÉMICA; BUSCANDO
+PRESERVAR Y MEJORAR LA CALIDAD DE VIDA
+CON RESPONSABILIDAD SOCIAL.
+LA CLINICA SAN JORGE SAS, SERÁ EN EL 2028 UNA IPS RECONOCIDAEN LA REGIÓN POR LA ACREDITACIÓN DE LOS SERVICIOS DE SALUD,GRACIAS AL TRABAJO EN ALTOS ESTÁNDARES DE CALIDADCUMPLIDOS, EN UN MARCO DE SEGURIDAD Y CONFIANZA.
+VISION
+POLÍTICA DE
+POLÍTICA DE
+CALIDAD
+• GARANTIZAR MEDIANTE ACCIONES
+PREVENTIVAS PERIÓDICAS EL BUEN
+FUNCIONAMIENTO DE LOS EQUIPOS QUE
+INTERVIENEN EN EL PROCESO.
+• MINIMIZAR LOS TIEMPOS DE ESPERA PARA
+LA REALIZACIÓN DE LOS PROCEDIMIENTOS.
+• VINCULAR A LA ENTIDAD PERSONAS CON
+ALTO SENTIDO DE LA RESPONSABILIDAD Y
+VOCACIÓN DE SERVICIO.
+• OPTIMIZAR LAS MEDIDAS ASÉPTICAS
+PARA LA ATENCIÓN DE SALUD Y QUE ESTA
+CONTINÚE SIENDO UN LUGAR SEGURO Y
+CONFIABLE.
+PRINCIPIOS
+C O R P O R A T I V O S
+EFICIENCIA
+ESTÁ VINCULADA A UTILIZAR LOS MEDIOS DISPONIBLES DE MANERA
+RACIONAL PARA LLEGAR A UNA META. SE TRATA DE LA CAPACIDAD DE
+ALCANZAR UN OBJETIVO FIJADO CON ANTERIORIDAD EN EL MENOR
+TIEMPO POSIBLE Y CON EL MÍNIMO USO POSIBLE DE LOS RECURSOS, LO
+QUE SUPONE UNA OPTIMIZACIÓN
+HUMANIZACION
+ESTÁ VINCULADA A UTILIZAR LOS MEDIOS DISPONIBLES DE MANERA
+RACIONAL PARA LLEGAR A UNA META. SE TRATA DE LA CAPACIDAD
+DE ALCANZAR UN OBJETIVO FIJADO CON ANTERIORIDAD EN EL MENOR
+TIEMPO POSIBLE Y CON ELMÍNIMO USO POSIBLE DE LOS RECURSOS, LO
+QUE SUPONE UNA OPTIMIZACIÓN
+PRINCIPIOS
+C O R P O R A T I V O S
+SEGURIDAD DEL PACIENTE
+ES UN PRINCIPIO FUNDAMENTAL DE LA ATENCIÓN SANITARIA. HAY UN CIERTO
+GRADO DE PELIGROSIDAD INHERENTE A CADA PASO DEL PROCESO DE
+ATENCIÓN DE SALUD. LOS EVENTOS ADVERSOS PUEDEN ESTAR EN RELACIÓN
+CON PROBLEMAS DE LA PRÁCTICA CLÍNICA, DE LOS PRODUCTOS,
+DE LOS PROCEDIMIENTOS O DEL SISTEMA.
+TRABAJO HONESTO Y TRANSPARENTE
+ACTUAMOS CON DISPOSICIÓN PERMANENTE HACIA
+NUESTROS CLIENTES PARA OFRECER SERVICIOS CON OPORTUNIDAD,
+AMABILIDAD, CALIDEZ, EFICACIA Y SEGURIDAD.
+MEDICINA
+ESPECIALIZADA
+Especialista Pediatría / Consulta
+Especialista Medicina Interna / Consulta
+Procedimientos Gineco-Obstétrica /
+Consulta
+Procedimientos Gineco-Obstétrica
+Especialista Cardiología / Consulta
+Procedimientos Cardiológico / Consulta
+Especialista Gastroenterología / Consulta
+Procedimientos Neurología / Consulta
+Especialista Neurología / Consulta
+Procedimientos Otorrinolaringología /
+Consulta
+Especialista Otorrinolaringología / Consulta
+Especialista Ecografía / Consulta
+Especialista Alergología / Consulta
+Especialista Dermatología / Consulta
+Procedimientos Dermatología / Consulta
+Especialista Endocrinología / Consulta
+Especialista Infectología / Consulta
+Especialista Medicina física y Rehabilitación /
+Consulta
+Procedimientos Medicina física y
+Rehabilitación / Consulta
+Especialista Neumología / Consulta
+Procedimientos Proctología
+Especialista Neurología / Consulta
+Especialista Reumatología / Consulta
+Especialista Hematología / Consulta
+Procedimientos Hematología-Procedimiento
+SERVICIOS
+LABORATORIO CLÍNICO
+Toma de muestras de
+laboratorio clínico Laboratorio
+I, II y III Nivel
+IMAGENOLOGÍA
+Imágenes I, II y III
+TRASLADO ASISTENCIAL
+ATENCIÓN INMEDIATA
+Transporte Asistencial Básico
+Terrestre Primario Transporte
+Asistencial Medicalizado Terrestre
+Primario
+Transporte Asistencial Básico
+Terrestre Secundario Transporte
+Asistencial Medicalizado Terrestre
+Secundario
+SERVICIOS
+ATENCIÓN DOMICILIARIA
+HOME-CARE
+Tu hogar es el lugar ideal para tu
+recuperación. En San Jorge Cuidado en
+Casa, contamos con un equipo de
+profesionales que ofrecen servicios
+humanizados, acompañando al paciente y a
+su familia en cada paso del proceso. Nos
+dedicamos a respaldar su bienestar a
+través de un plan de manejo ambulatorio
+complementario.
+Hospitalización Domiciliaria de
+pacientes crónicos con y sin ventilador
+PEDIÁTRICO
+Especialista Pediatría / Consulta
+Especialista Cardiología Pediátrica /
+Pediátrica / Consulta Especialista
+Neurología Pediátrica / Consulta
+Procedimientos Neurología Pediátrica
+Procedimientos Dermatología /
+Consulta
+Especialista Endocrinología Pediátrica /
+Consulta Especialista Infectología Pediátrica
+/ Consulta Especialista Nefrología Pediátrica
+/ Consulta Especialista
+Neurología Pediátrica / Consulta
+SERVICIOS
+C OM P L E T A R I O S
+Consulta medicina
+especializada Consulta
+externa medicina
+general Consulta
+externa medicina
+especializada
+Procedimientos
+diagnósticos y
+terapéuticos Transporte
+asistencial básico y
+medicalizado Nutrición
+Psicología
+Enfermería
+Optometría
+Programas de
+capacitación
+Imágenes no
+ionizantes
+Dolor y
+cuidados
+paliativos
