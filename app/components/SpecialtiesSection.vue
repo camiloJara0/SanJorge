@@ -103,7 +103,7 @@ onMounted(() => {
           </div>
         </div>
 
-        <div
+        <!-- <div
           :class="[
             'transition-all duration-800 ease-out delay-500',
             sectionVisible ? 'opacity-100' : 'opacity-0'
@@ -122,7 +122,7 @@ onMounted(() => {
               <span class="text-white/80 text-sm font-medium whitespace-nowrap">{{ item }}</span>
             </div>
           </UMarquee>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

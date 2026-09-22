@@ -29,7 +29,7 @@ onMounted(() => {
     id="nosotros"
     class="py-28 lg:py-36 relative overflow-hidden"
   >
-    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-clinic-accent/20 rounded-full blur-[120px] pointer-events-none" />
+    <div class="absolute top-0 right-0 w-125 h-125 bg-clinic-accent/20 rounded-full blur-[120px] pointer-events-none" />
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid lg:grid-cols-5 gap-12 lg:gap-20 items-center mb-28">
@@ -43,10 +43,10 @@ onMounted(() => {
             <img
               src="/img/FOTO 5.jpeg"
               alt="Clínica San Jorge - Atención médica"
-              class="w-full h-[400px] sm:h-[480px] object-cover"
+              class="w-full h-100 sm:h-120 object-cover"
               loading="lazy"
             >
-            <div class="absolute inset-0 bg-gradient-to-t from-clinic-primary/50 via-transparent to-transparent" />
+            <div class="absolute inset-0 bg-linear-to-t from-clinic-primary/50 via-transparent to-transparent" />
             <div class="absolute bottom-0 left-0 right-0 p-8">
               <div class="glass-card rounded-2xl p-5 max-w-sm">
                 <p class="font-heading font-semibold text-white text-sm leading-relaxed">
@@ -72,54 +72,24 @@ onMounted(() => {
             class="font-heading text-3xl sm:text-4xl font-bold text-clinic-dark mb-6"
             style="text-wrap: balance;"
           >
-            Más de 15 años <span class="gradient-text">cuidando familias</span>
+            Años <span class="gradient-text">cuidando familias</span>
           </h2>
 
-          <ul class="space-y-4 mb-10">
-            <li class="flex items-start gap-3">
-              <div class="w-6 h-6 bg-clinic-secondary/10 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                <UIcon
-                  name="i-lucide-check"
-                  class="w-3.5 h-3.5 text-clinic-secondary"
-                />
-              </div>
-              <span class="text-clinic-gray leading-relaxed">Atención médica especializada con profesionales altamente calificados.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="w-6 h-6 bg-clinic-secondary/10 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                <UIcon
-                  name="i-lucide-check"
-                  class="w-3.5 h-3.5 text-clinic-secondary"
-                />
-              </div>
-              <span class="text-clinic-gray leading-relaxed">Modelo de atención enfocado en prevención y promoción de la salud.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="w-6 h-6 bg-clinic-secondary/10 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                <UIcon
-                  name="i-lucide-check"
-                  class="w-3.5 h-3.5 text-clinic-secondary"
-                />
-              </div>
-              <span class="text-clinic-gray leading-relaxed">Compromiso con ética, respeto y humanidad en cada interacción.</span>
-            </li>
-          </ul>
-
-          <div class="flex gap-4">
+          <div class="flex lg:flex-row flex-col gap-4">
             <div class="flex-1 bg-clinic-light rounded-2xl p-5 border border-clinic-muted/30">
               <div class="font-heading font-bold text-clinic-primary text-lg mb-1">
                 Misión
               </div>
-              <p class="text-clinic-gray text-sm leading-relaxed">
-                Preservar y mejorar la calidad de vida con responsabilidad social.
+              <p class="text-clinic-gray text-sm leading-relaxed lowercase">
+                LA CLINICA SAN JORGE SAS, ESTÁ COMPROMETIDA CON LA CONDICIÓN Y SEGURIDAD DEL PACIENTE, LA FAMILIA, EL MEDIO AMBIENTE, EL BIENESTAR LABORAL Y LA FORMACIÓN ACADÉMICA; BUSCANDO PRESERVAR Y MEJORAR LA CALIDAD DE VIDA CON RESPONSABILIDAD SOCIAL.
               </p>
             </div>
             <div class="flex-1 bg-clinic-light rounded-2xl p-5 border border-clinic-muted/30">
               <div class="font-heading font-bold text-clinic-secondary text-lg mb-1">
                 Visión
               </div>
-              <p class="text-clinic-gray text-sm leading-relaxed">
-                Ser una IPS reconocida por acreditación de servicios de salud.
+              <p class="text-clinic-gray text-sm leading-relaxed lowercase">
+                LA CLINICA SAN JORGE SAS, SERÁ EN EL 2028 UNA IPS RECONOCIDAEN LA REGIÓN POR LA ACREDITACIÓN DE LOS SERVICIOS DE SALUD,GRACIAS AL TRABAJO EN ALTOS ESTÁNDARES DE CALIDADCUMPLIDOS, EN UN MARCO DE SEGURIDAD Y CONFIANZA.
               </p>
             </div>
           </div>

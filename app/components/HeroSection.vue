@@ -100,8 +100,8 @@ onMounted(() => {
           ]"
           style="text-wrap: balance;"
         >
-          Cuidando tu salud
-          <span class="gradient-text-light">con excelencia</span>
+          Tu salud es
+          <span class="gradient-text-light">nuestra prioridad</span>
         </h1>
 
         <p

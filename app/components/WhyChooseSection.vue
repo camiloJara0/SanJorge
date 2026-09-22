@@ -1,11 +1,11 @@
 <script setup>
 const features = [
   { icon: 'i-lucide-user-round-check', title: 'Atención Humanizada', description: 'Trato cálido y respetuoso en cada interacción.', image: '/img/FOTO 11.jpeg', large: true },
-  { icon: 'i-lucide-microscope', title: 'Tecnología Avanzada', description: 'Equipos de última generación para diagnósticos precisos.', image: null, large: false },
-  { icon: 'i-lucide-users', title: 'Personal Especializado', description: 'Equipo médico altamente calificado y comprometido.', image: null, large: false },
-  { icon: 'i-lucide-shield-check', title: 'Cobertura Integral', description: 'Medicina general, especialidades, laboratorio y más.', image: null, large: false },
+  { icon: 'i-lucide-microscope', title: 'Tecnología Avanzada', description: 'Equipos de última generación para diagnósticos precisos.', image: '/img/FOTO 26.jpeg', large: false },
+  { icon: 'i-lucide-users', title: 'Personal Especializado', description: 'Equipo médico altamente calificado y comprometido.', image: '/img/FOTO 32.jpeg', large: false },
+  { icon: 'i-lucide-shield-check', title: 'Cobertura Integral', description: 'Medicina general, especialidades, laboratorio y más.', image: '/img/FOTO 31.jpeg', large: false },
   { icon: 'i-lucide-clock-4', title: 'Disponibilidad 24/7', description: 'Transporte y emergencia disponibles todo el día.', image: '/img/FOTO 12.jpeg', large: true },
-  { icon: 'i-lucide-map-pin', title: 'Ubicación Estratégica', description: 'Instalaciones modernas y accesibles en Cali.', image: null, large: false }
+  { icon: 'i-lucide-map-pin', title: 'Ubicación Estratégica', description: 'Instalaciones modernas y accesibles en Cali.', image: '/img/FOTO 1.jpeg', large: false }
 ]
 
 const sectionVisible = ref(false)

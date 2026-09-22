@@ -1,14 +1,14 @@
 <script setup>
 const images = [
-  { src: '/img/FOTO 14.jpeg', alt: 'Recepción de la Clínica San Jorge', span: 'col-span-2 row-span-2' },
-  { src: '/img/FOTO 15.jpeg', alt: 'Sala de espera moderna', span: 'col-span-1 row-span-1' },
-  { src: '/img/FOTO 16.jpeg', alt: 'Consultorio médico', span: 'col-span-1 row-span-1' },
-  { src: '/img/FOTO 17.jpeg', alt: 'Área de laboratorio', span: 'col-span-1 row-span-1' },
-  { src: '/img/FOTO 18.jpeg', alt: 'Sala de procedimientos', span: 'col-span-1 row-span-1' },
-  { src: '/img/FOTO 19.jpeg', alt: 'Equipo médico avanzado', span: 'col-span-1 row-span-1' },
-  { src: '/img/FOTO 20.jpeg', alt: 'Área de imagenología', span: 'col-span-1 row-span-1' },
-  { src: '/img/FOTO 21.jpeg', alt: 'Espacio de recuperación', span: 'col-span-2 row-span-1' },
-  { src: '/img/FOTO 22.jpeg', alt: 'Instalaciones exteriores', span: 'col-span-1 row-span-1' }
+  { src: '/img/FOTO 4.jpeg', alt: 'Recepción de la Clínica San Jorge', span: 'col-span-2 row-span-2' },
+  { src: '/img/FOTO 39.jpeg', alt: 'Sala de espera moderna', span: 'col-span-1 row-span-1' },
+  { src: '/img/FOTO 8.jpeg', alt: 'Consultorio médico', span: 'col-span-1 row-span-1' },
+  { src: '/img/FOTO 37.jpeg', alt: 'Área de laboratorio', span: 'col-span-1 row-span-1' },
+  { src: '/img/FOTO 13.jpeg', alt: 'Sala de procedimientos', span: 'col-span-1 row-span-1' },
+  { src: '/img/FOTO 32.jpeg', alt: 'Equipo médico avanzado', span: 'col-span-1 row-span-1' },
+  { src: '/img/FOTO 12.jpeg', alt: 'Área de imagenología', span: 'col-span-1 row-span-1' },
+  { src: '/img/FOTO 7.jpeg', alt: 'Espacio de recuperación', span: 'col-span-2 row-span-1' },
+  { src: '/img/FOTO 34.jpeg', alt: 'Instalaciones exteriores', span: 'col-span-1 row-span-1' }
 ]
 
 const currentIndex = ref(0)
