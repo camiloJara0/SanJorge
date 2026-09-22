@@ -8,7 +8,7 @@ const images = [
   { src: '/img/FOTO 32.jpeg', alt: 'Equipo médico avanzado', span: 'col-span-1 row-span-1' },
   { src: '/img/FOTO 12.jpeg', alt: 'Área de imagenología', span: 'col-span-1 row-span-1' },
   { src: '/img/FOTO 7.jpeg', alt: 'Espacio de recuperación', span: 'col-span-2 row-span-1' },
-  { src: '/img/FOTO 34.jpeg', alt: 'Instalaciones exteriores', span: 'col-span-1 row-span-1' }
+  // { src: '/img/FOTO 34.jpeg', alt: 'Instalaciones exteriores', span: 'col-span-1 row-span-1' }
 ]
 
 const currentIndex = ref(0)

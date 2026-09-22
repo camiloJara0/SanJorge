@@ -87,10 +87,10 @@ onMounted(() => {
             heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           ]"
         >
-          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8 border border-white/10">
+          <!-- <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8 border border-white/10">
             <div class="w-2 h-2 bg-clinic-secondary rounded-full animate-pulse-soft" />
             <span class="text-white/90 text-sm font-medium">Atención médica integral en Cali</span>
-          </div>
+          </div> -->
         </div>
 
         <h1
@@ -139,7 +139,7 @@ onMounted(() => {
           />
         </div>
 
-        <div
+        <!-- <div
           id="hero-stats"
           :class="[
             'grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 transition-all duration-1000 ease-out delay-600',
@@ -158,7 +158,7 @@ onMounted(() => {
               {{ stat.label }}
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 

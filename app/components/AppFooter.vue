@@ -19,8 +19,8 @@ function scrollTo(href) {
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
         <div class="sm:col-span-2 lg:col-span-1">
           <div class="flex items-center gap-3 mb-6">
-            <div class="w-12 h-12 bg-clinic-primary rounded-xl flex items-center justify-center shadow-lg shadow-clinic-primary/20">
-              <span class="text-white font-heading font-bold text-xl">SJ</span>
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center">
+              <img src="/logoSJ.png" alt="Logo San Jorge" />
             </div>
             <div>
               <span class="font-heading font-bold text-white text-xl leading-tight block">Clínica</span>

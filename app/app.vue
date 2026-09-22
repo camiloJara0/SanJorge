@@ -17,7 +17,7 @@ useHead({
     { name: 'twitter:description', content: siteDescription }
   ],
   link: [
-    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    { rel: 'icon', type: 'image/x-icon', href: '/logoSJ.ico' },
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
   ],
   htmlAttrs: { lang: 'es' },
@@ -80,8 +80,8 @@ onMounted(() => {
           class="flex items-center gap-2.5"
           @click.prevent="scrollToSection('#inicio')"
         >
-          <div class="w-10 h-10 bg-clinic-primary rounded-xl flex items-center justify-center shadow-md shadow-clinic-primary/20">
-            <span class="text-white font-heading font-bold text-lg">SJ</span>
+          <div class="w-10 h-10  rounded-xl flex items-center justify-center">
+            <img src="/logoSJ.png" alt="Logo San Jorge">
           </div>
           <div class="hidden sm:block">
             <span

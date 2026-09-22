@@ -17,14 +17,14 @@ const props = defineProps({
 function scrollToScene(index) {
   const section = document.getElementById('narrativa')
   if (!section) return
-  const sceneHeight = section.offsetHeight / props.scenes.length
+  const sceneHeight = section.offsetHeight / (props.scenes.length + 1)
   const target = section.offsetTop + sceneHeight * index
   window.scrollTo({ top: target, behavior: 'smooth' })
 }
 </script>
 
 <template>
-  <div class="absolute right-6 top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col items-center gap-0">
+  <div class="absolute right-1 top-3/4 -translate-y-1/2 z-40 hidden lg:flex flex-col items-center gap-0">
     <div class="relative flex flex-col items-center">
       <div class="absolute top-0 bottom-0 w-px bg-white/10" />
       <div
@@ -36,7 +36,7 @@ function scrollToScene(index) {
         v-for="(scene, index) in scenes"
         :key="index"
         class="relative flex items-center gap-3 py-4 group cursor-pointer"
-        @click="scrollToScene(index)"
+        @click="scrollToScene(index + 1)"
       >
         <div
           :class="[

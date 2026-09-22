@@ -77,22 +77,7 @@ onMounted(() => {
           </template>
 
           <div class="relative h-full flex flex-col justify-end p-7">
-            <div
-              :class="[
-                'w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110',
-                feature.image
-                  ? 'bg-white/10 backdrop-blur-sm border border-white/10'
-                  : 'bg-clinic-primary/10'
-              ]"
-            >
-              <UIcon
-                :name="feature.icon"
-                :class="[
-                  'w-6 h-6',
-                  feature.image ? 'text-clinic-secondary' : 'text-clinic-primary'
-                ]"
-              />
-            </div>
+
             <h3
               :class="[
                 'font-heading font-bold text-lg mb-2',

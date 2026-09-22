@@ -54,7 +54,7 @@ onMounted(() => {
             sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           ]"
         >
-          <div
+          <!-- <div
             :class="[
               'inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-5 py-2 mb-8 border border-white/10 transition-all duration-700 delay-100',
               sectionVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
@@ -65,7 +65,7 @@ onMounted(() => {
               class="w-4 h-4 text-clinic-secondary"
             />
             <span class="text-white/90 text-sm font-medium">Atención inmediata</span>
-          </div>
+          </div> -->
 
           <h2
             :class="[
