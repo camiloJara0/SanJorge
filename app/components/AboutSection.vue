@@ -49,7 +49,7 @@ onMounted(() => {
             <div class="absolute inset-0 bg-linear-to-t from-clinic-primary/50 via-transparent to-transparent" />
             <div class="absolute bottom-0 left-0 right-0 p-8">
               <div class="glass-card rounded-2xl p-5 max-w-sm">
-                <p class="font-heading font-semibold text-white text-sm leading-relaxed">
+                <p class="font-heading font-semibold text-black text-sm leading-relaxed">
                   "Aliado confiable en el cuidado de tu salud"
                 </p>
               </div>

@@ -155,6 +155,7 @@ onMounted(() => {
   document
     .querySelectorAll('#narrativa [id^="scene-"]')
     .forEach(el => observer.observe(el))
+  timeChange(0)
 
 })
 
@@ -184,11 +185,15 @@ function scrollToScene(accion) {
 }
 
 watch(activeScene, (scene) => {
+  timeChange(scene)
+})
+
+function timeChange (scene) {
   if (scene >= scenes.length - 1) return
   if (scene < 5 && scrollActivate.value) {
     setTimeout(() => scrollToScene('mas'), 5000)
   }
-})
+}
 </script>
 
 <template>
@@ -376,7 +381,7 @@ watch(activeScene, (scene) => {
 
       <div class="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2">
         <div class="flex gap-3">
-          <UButton icon="i-lucide-arrow-left" @click="scrollToScene('menos')"/>
+          <UButton icon="i-lucide-arrow-left" @click="scrollToScene('menos')" variant="soft"/>
           <div class="flex flex-col justify-center items-center">
             <span class="text-white/40 text-xs font-medium tracking-wider uppercase">
               Escena {{ activeScene + 1 }} / {{ scenes.length }}
@@ -396,7 +401,7 @@ watch(activeScene, (scene) => {
               />
             </div>
           </div>
-          <UButton icon="i-lucide-arrow-right" @click="scrollToScene('mas')"/>
+          <UButton icon="i-lucide-arrow-right" @click="scrollToScene('mas')" variant="soft"/>
         </div>
       </div>
     </div>
