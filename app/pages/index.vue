@@ -1,15 +1,11 @@
 <template>
   <div>
-    <HeroSection />
-    <ClientOnly>
-      <NarrativeSection />
-    </ClientOnly>
+    <NarrativeSection />
     <AboutSection />
     <ServicesSection />
     <SpecialtiesSection />
     <WhyChooseSection />
     <FacilitiesSection />
-    <!-- <TestimonialsSection /> -->
     <CtaSection />
     <ContactSection />
   </div>

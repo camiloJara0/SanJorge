@@ -53,14 +53,30 @@ const scrolled = ref(false)
 
 function scrollToSection(to) {
   mobileMenuOpen.value = false
+
+  if (to === '#inicio') {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    return
+  }
+
   const el = document.querySelector(to)
   if (el) el.scrollIntoView({ behavior: 'smooth' })
 }
 
+function updateHeaderState() {
+  const narrative = document.getElementById('narrativa')
+
+  if (narrative) {
+    scrolled.value = narrative.getBoundingClientRect().bottom <= 80
+    return
+  }
+
+  scrolled.value = window.scrollY > 60
+}
+
 onMounted(() => {
-  window.addEventListener('scroll', () => {
-    scrolled.value = window.scrollY > 60
-  }, { passive: true })
+  window.addEventListener('scroll', updateHeaderState, { passive: true })
+  updateHeaderState()
 })
 </script>
 
@@ -81,7 +97,10 @@ onMounted(() => {
           @click.prevent="scrollToSection('#inicio')"
         >
           <div class="w-10 h-10  rounded-xl flex items-center justify-center">
-            <img src="/logoSJ.png" alt="Logo San Jorge">
+            <img
+              src="/logoSJ.png"
+              alt="Logo San Jorge"
+            >
           </div>
           <div class="hidden sm:block">
             <span
@@ -135,11 +154,9 @@ onMounted(() => {
           :class="!scrolled ? 'border-white/30 text-white hover:bg-white/10' : ''"
           @click="scrollToSection('#contacto')"
         />
-
       </template>
 
-      <template #toggle></template>
-
+      <template #toggle />
     </UHeader>
 
     <!-- <UModal

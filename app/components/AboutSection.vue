@@ -75,7 +75,7 @@ onMounted(() => {
             Años <span class="gradient-text">cuidando familias</span>
           </h2>
 
-          <div class="flex lg:flex-row flex-col gap-4">
+          <div class="flex 2xl:flex-row flex-col gap-4">
             <div class="flex-1 bg-clinic-light rounded-2xl p-5 border border-clinic-muted/30">
               <div class="font-heading font-bold text-clinic-primary text-lg mb-1">
                 Misión

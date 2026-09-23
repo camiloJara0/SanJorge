@@ -1,6 +1,19 @@
 <script setup>
 const scenes = [
   {
+    step: '00',
+    title: 'Tu salud es nuestra prioridad',
+    description: 'Tecnología de vanguardia y un equipo humano comprometido con tu bienestar.',
+    service: 'Inicio',
+    serviceIcon: 'i-lucide-home',
+    image: '/img/FOTO 1.jpeg',
+    overlay: 'from-clinic-dark/70 via-clinic-dark/40 to-clinic-dark/60',
+    accent: 'bg-clinic-primary/20 border-clinic-primary/30 text-clinic-accent',
+    objective: '',
+    services: [],
+    ctas: []
+  },
+  {
     step: '01',
     title: 'Algo no está bien',
     description: 'Tu cuerpo te envía señales. No las ignores: la prevención y promoción de la salud nos permite actuar a tiempo.',
@@ -40,7 +53,7 @@ const scenes = [
       { value: '4', label: 'Principios corporativos' }
     ],
     ctas: [
-      { label: 'Contactar ahora', icon: 'i-lucide-phone', href: 'tel:', variant: 'solid' }
+      { label: 'Contactar ahora', icon: 'i-lucide-phone', href: '#contacto', variant: 'solid' }
     ]
   },
   {
@@ -49,8 +62,8 @@ const scenes = [
     description: 'Nuestro transporte asistencial básico y medicalizado llega donde nos necesites, con atención inmediata y seguridad en cada traslado.',
     service: 'Traslado asistencial',
     serviceIcon: 'i-lucide-truck',
-    image: '/img/FOTO 2.jpeg',
-    overlay: 'from-clinic-dark/80 via-clinic-secondary/20 to-clinic-dark/60',
+    image: '/img/FOTO 28.jpeg',
+    overlay: 'from-clinic-dark/90 via-clinic-secondary/20 to-clinic-dark/60',
     accent: 'bg-clinic-secondary/20 border-clinic-secondary/30 text-clinic-secondary',
     objective: 'Trasladar al paciente de forma segura, con transporte básico o medicalizado y atención inmediata cuando se necesita.',
     services: [
@@ -140,20 +153,36 @@ const NAV_KEYS = new Set(['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 
 const activeScene = ref(0)
 const autoPlay = ref(true)
 const sectionInView = ref(false)
+const showTutorial = ref(false)
 const progress = computed(() => activeScene.value / (scenes.length - 1))
 
 let sceneObserver
 let autoTimer = null
+let tutorialTimer = null
 let programmatic = false
 let programmaticFallback = null
 let lastWheelAt = 0
 let lastInputAt = 0
 let wheelGestureNavigating = false
 
+function startTutorial() {
+  if (!sectionInView.value || activeScene.value !== 0) return
+  showTutorial.value = true
+  clearTimeout(tutorialTimer)
+  tutorialTimer = setTimeout(stopTutorial, 7000)
+}
+
+function stopTutorial() {
+  showTutorial.value = false
+  clearTimeout(tutorialTimer)
+  tutorialTimer = null
+}
+
 function cancelAutoPlay() {
   autoPlay.value = false
   clearTimeout(autoTimer)
   autoTimer = null
+  stopTutorial()
 }
 
 function scheduleAutoPlay() {
@@ -276,15 +305,23 @@ function handleVisibilityChange() {
 
 watch(activeScene, () => {
   if (autoPlay.value) scheduleAutoPlay()
+
+  if (activeScene.value === 0) {
+    startTutorial()
+  } else {
+    stopTutorial()
+  }
 })
 
 watch(sectionInView, (visible) => {
   if (visible) {
     scheduleAutoPlay()
+    startTutorial()
     return
   }
   clearTimeout(autoTimer)
   autoTimer = null
+  stopTutorial()
 })
 
 onMounted(() => {
@@ -319,6 +356,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
   sceneObserver?.disconnect()
   clearTimeout(autoTimer)
+  clearTimeout(tutorialTimer)
   clearTimeout(programmaticFallback)
   window.removeEventListener('scroll', handleScroll)
   window.removeEventListener('scrollend', handleScrollEnd)
@@ -359,6 +397,13 @@ onBeforeUnmount(() => {
         />
       </div>
 
+      <div
+        class="absolute inset-0 z-10 transition-opacity duration-700 ease-out"
+        :class="activeScene === 0 ? 'opacity-100' : 'opacity-0 pointer-events-none'"
+      >
+        <HeroSection />
+      </div>
+
       <!-- <NarrativeProgress
         :scenes="scenes"
         :active-scene="activeScene"
@@ -366,7 +411,10 @@ onBeforeUnmount(() => {
         @navigate="goToScene"
       /> -->
 
-      <div class="relative z-10 h-full flex items-center">
+      <div
+        v-if="activeScene !== 0"
+        class="relative z-20 h-full flex items-center"
+      >
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full pt-16 pb-24 sm:pt-20 sm:pb-20">
           <Transition
             name="scene"
@@ -377,20 +425,6 @@ onBeforeUnmount(() => {
               class="grid lg:grid-cols-5 gap-7 lg:gap-12 items-center"
             >
               <div class="lg:col-span-3">
-                <!-- <div
-                  :class="[
-                    'scene-anim inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-5 border',
-                    scenes[activeScene].accent
-                  ]"
-                  style="animation-delay: 0ms"
-                >
-                  <UIcon
-                    :name="scenes[activeScene].serviceIcon"
-                    class="w-4 h-4"
-                  />
-                  <span class="text-sm font-medium">{{ scenes[activeScene].service }}</span>
-                </div> -->
-
                 <div class="flex items-baseline gap-4 mb-4">
                   <span
                     class="scene-anim hidden sm:block font-heading text-7xl lg:text-8xl font-bold text-white/20 leading-none select-none"
@@ -488,33 +522,63 @@ onBeforeUnmount(() => {
                       </span>
                     </li>
                   </ul>
-
-                  <!-- <div
-                    v-if="scenes[activeScene].stats?.length"
-                    class="flex flex-wrap gap-2 mt-5 pt-4 border-t border-white/10"
-                  >
-                    <span
-                      v-for="stat in scenes[activeScene].stats"
-                      :key="stat.label"
-                      class="inline-flex items-baseline gap-1.5 bg-white/8 border border-white/10 rounded-full px-3 py-1.5"
-                    >
-                      <span class="font-heading font-bold text-clinic-secondary text-sm">
-                        {{ stat.value }}
-                      </span>
-                      <span class="text-[0.7rem] text-white/50">
-                        {{ stat.label }}
-                      </span>
-                    </span>
-                  </div> -->
                 </div>
               </div>
             </div>
           </Transition>
         </div>
       </div>
-
-      <div class="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2">
-        <div class="flex items-center gap-3">
+        <Transition name="hint">
+          <button
+            v-if="activeScene === 6"
+            type="button"
+            class="absolute md:left-25 left-10 -translate-x-1/2 z-30 flex flex-col items-center gap-2 transition-all duration-500 bottom-10"
+          >
+          <div class="glass-card-dark rounded-full px-4 py-2 text-white flex gap-2 items-center">
+            <UIcon
+              name="i-lucide-mouse"
+              class="w-3.5 h-3.5 text-white shrink-0"
+            />
+            <span class="whitespace-normal sm:whitespace-nowrap text-xs md:block hidden">Conócenos</span>
+            <UIcon
+              name="i-lucide-arrow-down"
+              class="w-3.5 h-3.5 text-white animate-bounce shrink-0"
+            />
+          </div>
+          </button>
+        </Transition>
+      <div
+        :class="[
+          'absolute left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-2 transition-all duration-500',
+          activeScene === 0 ? 'bottom-5' : 'bottom-5'
+        ]"
+      >
+        <Transition name="hint">
+          <button
+            v-if="showTutorial"
+            type="button"
+            class="order-first glass-card-dark rounded-full px-4 py-2 mb-1 flex items-center gap-2 text-white/75 text-xs leading-snug border border-white/10 shadow-lg shadow-black/20 cursor-pointer max-w-[min(92vw,26rem)]"
+            @click="stopTutorial"
+          >
+            <UIcon
+              name="i-lucide-mouse"
+              class="w-3.5 h-3.5 text-clinic-secondary shrink-0"
+            />
+            <span class="whitespace-normal sm:whitespace-nowrap text-center sm:text-left">Scrollea o usa estos controles</span>
+            <UIcon
+              name="i-lucide-arrow-down"
+              class="w-3.5 h-3.5 text-clinic-secondary animate-bounce shrink-0"
+            />
+          </button>
+        </Transition>
+        <div class="flex gap-2 items-center">
+          <UButton
+            icon="i-lucide-arrow-left"
+            variant="soft"
+            class="rounded-full"
+            :disabled="activeScene === 0"
+            @click="goToScene(activeScene - 1)"
+          />
           <button
             type="button"
             class="w-8 h-8 rounded-full border border-white/20 bg-white/10 hover:bg-white/20 text-white/80 hover:text-white flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-clinic-secondary"
@@ -526,8 +590,17 @@ onBeforeUnmount(() => {
               class="w-3.5 h-3.5"
             />
           </button>
+          <UButton
+            icon="i-lucide-arrow-right"
+            variant="soft"
+            class="rounded-full"
+            :disabled="activeScene === scenes.length - 1"
+            @click="goToScene(activeScene + 1)"
+          />
+        </div>
+        <div class="flex items-center gap-3">
           <span class="text-white/40 text-xs font-medium tracking-wider uppercase">
-            Escena {{ activeScene + 1 }} / {{ scenes.length }}
+            Escena {{ activeScene }} / {{ scenes.length - 1 }}
           </span>
           <div
             v-if="autoPlay && sectionInView"
@@ -540,7 +613,14 @@ onBeforeUnmount(() => {
             />
           </div>
         </div>
-        <div class="flex gap-1.5">
+        <div
+          class="flex gap-1.5"
+          role="progressbar"
+          :aria-valuenow="Math.round(progress * 100)"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-label="Progreso del recorrido"
+        >
           <div
             v-for="(_, index) in scenes"
             :key="index"
@@ -599,6 +679,23 @@ onBeforeUnmount(() => {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.hint-enter-active {
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hint-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.hint-enter-from {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.hint-leave-to {
+  opacity: 0;
 }
 
 .auto-advance {

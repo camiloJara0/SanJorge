@@ -1,34 +1,5 @@
 <script setup>
-const stats = [
-  { value: 15, suffix: '+', label: 'Años de experiencia' },
-  { value: 20, suffix: '+', label: 'Especialidades' },
-  { value: 50, suffix: 'K+', label: 'Pacientes atendidos' },
-  { value: 98, suffix: '%', label: 'Satisfacción' }
-]
-
-const countersVisible = ref(false)
-const counterValues = ref(stats.map(() => 0))
 const parallaxY = ref(0)
-
-function animateCounters() {
-  if (countersVisible.value) return
-  countersVisible.value = true
-  stats.forEach((stat, i) => {
-    const duration = 2000
-    const steps = 60
-    const increment = stat.value / steps
-    let current = 0
-    const interval = setInterval(() => {
-      current += increment
-      if (current >= stat.value) {
-        counterValues.value[i] = stat.value
-        clearInterval(interval)
-      } else {
-        counterValues.value[i] = Math.floor(current)
-      }
-    }, duration / steps)
-  })
-}
 
 const heroVisible = ref(false)
 
@@ -36,20 +7,6 @@ onMounted(() => {
   setTimeout(() => {
     heroVisible.value = true
   }, 100)
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          animateCounters()
-          observer.disconnect()
-        }
-      })
-    },
-    { threshold: 0.3 }
-  )
-  const statsEl = document.getElementById('hero-stats')
-  if (statsEl) observer.observe(statsEl)
 
   window.addEventListener('scroll', () => {
     parallaxY.value = window.scrollY * 0.3
@@ -87,10 +44,6 @@ onMounted(() => {
             heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           ]"
         >
-          <!-- <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8 border border-white/10">
-            <div class="w-2 h-2 bg-clinic-secondary rounded-full animate-pulse-soft" />
-            <span class="text-white/90 text-sm font-medium">Atención médica integral en Cali</span>
-          </div> -->
         </div>
 
         <h1
@@ -126,7 +79,7 @@ onMounted(() => {
             variant="solid"
             size="xl"
             class="shadow-lg shadow-clinic-secondary/30"
-            @click="document.querySelector('#contacto')?.scrollIntoView({ behavior: 'smooth' })"
+            to="#contacto"
           />
           <UButton
             label="Conocer Servicios"
@@ -135,37 +88,17 @@ onMounted(() => {
             variant="outline"
             size="xl"
             class="border-white/25 text-white hover:bg-white/10"
-            @click="document.querySelector('#servicios')?.scrollIntoView({ behavior: 'smooth' })"
+            to="#servicios"
           />
         </div>
 
-        <!-- <div
-          id="hero-stats"
-          :class="[
-            'grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 transition-all duration-1000 ease-out delay-600',
-            heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          ]"
-        >
-          <div
-            v-for="(stat, index) in stats"
-            :key="index"
-            class="glass-card rounded-2xl px-5 py-4 text-center"
-          >
-            <div class="font-heading font-bold text-white text-2xl sm:text-3xl">
-              {{ counterValues[index] }}{{ stat.suffix }}
-            </div>
-            <div class="text-white/50 text-xs mt-1">
-              {{ stat.label }}
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
 
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-float">
+    <!-- <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-float">
       <div class="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
         <div class="w-1.5 h-1.5 bg-white/60 rounded-full animate-bounce" />
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
