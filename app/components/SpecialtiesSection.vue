@@ -1,7 +1,7 @@
 <script setup>
 const featured = [
-  { icon: 'i-lucide-heart-pulse', name: 'Cardiología', image: '/img/FOTO 23.jpeg' },
-  { icon: 'i-lucide-baby', name: 'Pediatría', image: '/img/FOTO 24.jpeg' },
+  { icon: 'i-lucide-heart-pulse', name: 'Cardiología', image: '/img/FOTO 22.jpeg' },
+  { icon: 'i-lucide-baby', name: 'Pediatría', image: '/img/FOTO 36.jpeg' },
   { icon: 'i-lucide-brain', name: 'Neurología', image: '/img/FOTO 28.jpeg' },
   { icon: 'i-lucide-circle-dot', name: 'Gastroenterología', image: '/img/FOTO 29.jpeg' }
 ]

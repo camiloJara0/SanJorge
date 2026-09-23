@@ -59,10 +59,10 @@ onMounted(() => {
           sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         ]"
       >
-        <div class="inline-flex items-center gap-2 bg-clinic-primary/5 rounded-full px-4 py-1.5 mb-6">
+        <!-- <div class="inline-flex items-center gap-2 bg-clinic-primary/5 rounded-full px-4 py-1.5 mb-6">
           <div class="w-1.5 h-1.5 bg-clinic-primary rounded-full" />
           <span class="text-clinic-primary text-sm font-semibold tracking-wide uppercase">Instalaciones</span>
-        </div>
+        </div> -->
         <h2
           class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-clinic-dark mb-5"
           style="text-wrap: balance;"
@@ -117,7 +117,7 @@ onMounted(() => {
           >
           <UButton
             icon="i-lucide-chevron-left"
-            color="white"
+            color="neutral"
             variant="solid"
             size="lg"
             class="absolute left-3 top-1/2 -translate-y-1/2 rounded-full shadow-lg"
@@ -125,7 +125,7 @@ onMounted(() => {
           />
           <UButton
             icon="i-lucide-chevron-right"
-            color="white"
+            color="neutral"
             variant="solid"
             size="lg"
             class="absolute right-3 top-1/2 -translate-y-1/2 rounded-full shadow-lg"

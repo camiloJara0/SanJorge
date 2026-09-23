@@ -56,10 +56,10 @@ onMounted(() => {
             sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           ]"
         >
-          <div class="inline-flex items-center gap-2 bg-clinic-secondary/10 rounded-full px-4 py-1.5 mb-6 border border-clinic-secondary/20">
+          <!-- <div class="inline-flex items-center gap-2 bg-clinic-secondary/10 rounded-full px-4 py-1.5 mb-6 border border-clinic-secondary/20">
             <div class="w-1.5 h-1.5 bg-clinic-secondary rounded-full" />
             <span class="text-clinic-secondary text-sm font-semibold tracking-wide uppercase">Contacto</span>
-          </div>
+          </div> -->
           <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5">
             Estamos <span class="text-clinic-secondary">para servirte</span>
           </h2>

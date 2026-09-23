@@ -40,10 +40,10 @@ onMounted(() => {
           sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         ]"
       >
-        <div class="inline-flex items-center gap-2 bg-clinic-primary/5 rounded-full px-4 py-1.5 mb-6">
+        <!-- <div class="inline-flex items-center gap-2 bg-clinic-primary/5 rounded-full px-4 py-1.5 mb-6">
           <div class="w-1.5 h-1.5 bg-clinic-primary rounded-full" />
           <span class="text-clinic-primary text-sm font-semibold tracking-wide uppercase">Diferenciales</span>
-        </div>
+        </div> -->
         <h2
           class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-clinic-dark mb-5"
           style="text-wrap: balance;"

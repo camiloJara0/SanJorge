@@ -1,9 +1,9 @@
 <script setup>
 const services = [
-  { icon: 'i-lucide-stethoscope', title: 'Consulta Externa', description: 'Valoración médica especializada para diagnóstico y tratamiento integral.', image: '/img/FOTO 2.jpeg' },
-  { icon: 'i-lucide-flask-conical', title: 'Laboratorio Clínico', description: 'Análisis de laboratorio I, II y III nivel con tecnología de vanguardia.', image: '/img/FOTO 3.jpeg' },
-  { icon: 'i-lucide-scan', title: 'Imágenes Diagnósticas', description: 'Estudios de imágenes precisos con equipos de última generación.', image: '/img/FOTO 4.jpeg' },
-  { icon: 'i-lucide-truck', title: 'Transporte Asistencial', description: 'Transporte básico y medicalizado disponible las 24 horas.', image: '/img/FOTO 6.jpeg' },
+  { icon: 'i-lucide-stethoscope', title: 'Consulta Externa', description: 'Valoración médica especializada para diagnóstico y tratamiento integral.', image: '/img/FOTO 38.jpeg' },
+  { icon: 'i-lucide-flask-conical', title: 'Laboratorio Clínico', description: 'Análisis de laboratorio I, II y III nivel con tecnología de vanguardia.', image: '/img/FOTO 12.jpeg' },
+  { icon: 'i-lucide-scan', title: 'Imágenes Diagnósticas', description: 'Estudios de imágenes precisos con equipos de última generación.', image: '/img/FOTO 6.jpeg' },
+  { icon: 'i-lucide-truck', title: 'Transporte Asistencial', description: 'Transporte básico y medicalizado disponible las 24 horas.', image: '/img/FOTO 4.jpeg' },
   { icon: 'i-lucide-home', title: 'Atención Domiciliaria', description: 'Recuperación en casa con equipo profesional y plan de manejo.', image: '/img/FOTO 7.jpeg' },
   { icon: 'i-lucide-baby', title: 'Pediátrico', description: 'Atención integral para niños con especialistas certificados.', image: '/img/FOTO 8.jpeg' }
 ]
@@ -95,9 +95,9 @@ onMounted(() => {
                 {{ item.description }}
               </p>
               <div class="flex items-center gap-2 text-clinic-secondary text-sm font-semibold opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                <span>Ver más</span>
+                <span>Servicio</span>
                 <UIcon
-                  name="i-lucide-arrow-right"
+                  name="i-lucide-arrow-up"
                   class="w-4 h-4"
                 />
               </div>

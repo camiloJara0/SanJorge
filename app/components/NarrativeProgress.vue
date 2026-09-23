@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps({
+defineProps({
   scenes: {
     type: Array,
     required: true
@@ -14,13 +14,7 @@ const props = defineProps({
   }
 })
 
-function scrollToScene(index) {
-  const section = document.getElementById('narrativa')
-  if (!section) return
-  const sceneHeight = section.offsetHeight / (props.scenes.length + 1)
-  const target = section.offsetTop + sceneHeight * index
-  window.scrollTo({ top: target, behavior: 'smooth' })
-}
+const emit = defineEmits(['navigate'])
 </script>
 
 <template>
@@ -36,7 +30,7 @@ function scrollToScene(index) {
         v-for="(scene, index) in scenes"
         :key="index"
         class="relative flex items-center gap-3 py-4 group cursor-pointer"
-        @click="scrollToScene(index + 1)"
+        @click="emit('navigate', index)"
       >
         <div
           :class="[

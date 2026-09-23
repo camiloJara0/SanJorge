@@ -3,41 +3,41 @@ const scenes = [
   {
     step: '01',
     title: 'Algo no está bien',
-    description: 'Tu cuerpo te envía señales. No las ignores. En Clínica San Jorge te ayudamos a interpretarlas a tiempo.',
-    service: 'Atención integral',
+    description: 'Tu cuerpo te envía señales. No las ignores: la prevención y promoción de la salud nos permite actuar a tiempo.',
+    service: 'Prevención y medicina general',
     serviceIcon: 'i-lucide-heart-pulse',
     image: '/img/FOTO 9.jpeg',
     overlay: 'from-clinic-dark/90 via-clinic-dark/50 to-clinic-dark/70',
     accent: 'bg-red-500/20 border-red-500/30 text-red-400',
-    objective: 'Detectar a tiempo cualquier señal de alerta y dar el seguimiento correcto antes de que sea tarde.',
+    objective: 'Prevenir y promocionar la salud con intervenciones personalizadas que buscan mejorar la calidad de vida de quienes confían en nosotros.',
     services: [
-      { icon: 'i-lucide-stethoscope', name: 'Medicina general', desc: 'Primera valoración con historia clínica y triage.' },
-      { icon: 'i-lucide-flask-conical', name: 'Laboratorio clínico', desc: 'Análisis de I, II y III nivel con resultados oportunos.' },
-      { icon: 'i-lucide-scan', name: 'Imágenes diagnósticas', desc: 'Estudios precisos con equipos de última generación.' }
+      { icon: 'i-lucide-shield-check', name: 'Prevención y promoción', desc: 'Intervenciones personalizadas para cuidar tu bienestar integral.' },
+      { icon: 'i-lucide-stethoscope', name: 'Consulta externa medicina general', desc: 'Primera valoración para detectar a tiempo cualquier señal.' },
+      { icon: 'i-lucide-activity', name: 'Procedimientos diagnósticos y terapéuticos', desc: 'Procedimientos que apoyan el diagnóstico y el tratamiento.' }
     ],
     stats: [
-      { value: '24/7', label: 'Disponibilidad' },
-      { value: '6', label: 'Servicios integrales' }
+      { value: 'Cali', label: 'Sede principal' },
+      { value: '3', label: 'Servicios modelo' }
     ],
     ctas: []
   },
   {
     step: '02',
     title: 'Un llamado de ayuda',
-    description: 'Un solo paso te separa de la atención que necesitas. Contáctanos y recibe orientación inmediata.',
-    service: 'Contacto inmediato',
-    serviceIcon: 'i-lucide-phone',
+    description: 'Un solo paso te separa de la atención que necesitas: acceso oportuno, tiempos de espera mínimos y trato cercano.',
+    service: 'Atención inmediata',
+    serviceIcon: 'i-lucide-zap',
     image: '/img/FOTO 38.jpeg',
     overlay: 'from-clinic-primary/80 via-clinic-primary/40 to-clinic-dark/60',
     accent: 'bg-clinic-primary/20 border-clinic-primary/30 text-clinic-accent',
-    objective: 'Acortar la distancia entre tu necesidad y la atención médica, con canales de contacto directos y una admisión sin complicaciones.',
+    objective: 'Minimizar los tiempos de espera y facilitar el acceso a una atención cercana, segura y de alta calidad.',
     services: [
-      { icon: 'i-lucide-message-circle', name: 'Línea de atención', desc: 'Habla con nuestro equipo y recibe orientación para tu visita.' },
-      { icon: 'i-lucide-calendar-check', name: 'Gestión de citas', desc: 'Agenda tu valoración y prepara tu visita con antelación.' },
-      { icon: 'i-lucide-clipboard-check', name: 'Admisión ágil', desc: 'Trámites de ingreso claros y acompañamiento en cada paso.' }
+      { icon: 'i-lucide-stethoscope', name: 'Consulta externa medicina especializada', desc: 'Acceso a especialistas cuando tu caso lo requiere.' },
+      { icon: 'i-lucide-hand-heart', name: 'Enfermería', desc: 'Acompañamiento profesional desde tu llegada.' },
+      { icon: 'i-lucide-brain', name: 'Psicología', desc: 'Apoyo emocional integral durante tu atención.' }
     ],
     stats: [
-      { value: '1', label: 'Paso para empezar' }
+      { value: '4', label: 'Principios corporativos' }
     ],
     ctas: [
       { label: 'Contactar ahora', icon: 'i-lucide-phone', href: 'tel:', variant: 'solid' }
@@ -46,41 +46,42 @@ const scenes = [
   {
     step: '03',
     title: 'En camino',
-    description: 'Nuestro transporte asistencial llega donde nos necesites, con seguridad y acompañamiento profesional.',
-    service: 'Transporte asistencial 24/7',
+    description: 'Nuestro transporte asistencial básico y medicalizado llega donde nos necesites, con atención inmediata y seguridad en cada traslado.',
+    service: 'Traslado asistencial',
     serviceIcon: 'i-lucide-truck',
     image: '/img/FOTO 2.jpeg',
     overlay: 'from-clinic-dark/80 via-clinic-secondary/20 to-clinic-dark/60',
     accent: 'bg-clinic-secondary/20 border-clinic-secondary/30 text-clinic-secondary',
-    objective: 'Trasladar al paciente con seguridad y acompañamiento profesional, esté donde esté, a cualquier hora del día.',
+    objective: 'Trasladar al paciente de forma segura, con transporte básico o medicalizado y atención inmediata cuando se necesita.',
     services: [
-      { icon: 'i-lucide-truck', name: 'Transporte básico', desc: 'Traslados seguros para citas, controles y exámenes.' },
-      { icon: 'i-lucide-heart-pulse', name: 'Transporte medicalizado', desc: 'Paciente monitoreado por personal paramédico durante el traslado.' },
-      { icon: 'i-lucide-clock-4', name: 'Flota 24/7', desc: 'Vehículos disponibles a cualquier hora, incluso fines de semana.' }
+      { icon: 'i-lucide-truck', name: 'Transporte asistencial básico', desc: 'Traslado terrestre primario y secundario para tus citas.' },
+      { icon: 'i-lucide-heart-pulse', name: 'Transporte asistencial medicalizado', desc: 'Soporte de personal de salud durante todo el recorrido.' },
+      { icon: 'i-lucide-clock-4', name: 'Atención inmediata', desc: 'Respuesta ágil cuando necesitas un traslado.' }
     ],
     stats: [
-      { value: '24/7', label: 'Flota disponible' },
-      { value: '2', label: 'Modalidades de traslado' }
+      { value: '4', label: 'Modalidades de traslado' },
+      { value: '2', label: 'Básico y medicalizado' }
     ],
     ctas: []
   },
   {
     step: '04',
     title: 'Bienvenido',
-    description: 'Un espacio diseñado para que te sientas seguro y acompañado desde el primer momento.',
-    service: 'Consulta externa',
+    description: 'Un espacio diseñado para que te sientas seguro desde el primer momento, con trato cálido, profesional y humanizado.',
+    service: 'Consulta externa y especialidades',
     serviceIcon: 'i-lucide-stethoscope',
     image: '/img/FOTO 8.jpeg',
     overlay: 'from-clinic-dark/70 via-clinic-primary/30 to-clinic-dark/50',
     accent: 'bg-clinic-accent/20 border-clinic-accent/30 text-clinic-accent',
-    objective: 'Recibir a cada paciente en un espacio seguro, humano y preparado para brindar tranquilidad desde la primera consulta.',
+    objective: 'Recibir a cada paciente con trato cálido y profesional, bajo los principios de eficiencia, humanización, seguridad y transparencia.',
     services: [
-      { icon: 'i-lucide-stethoscope', name: 'Consulta externa', desc: 'Valoración médica con privacidad, calidez y tiempo para ti.' },
-      { icon: 'i-lucide-users', name: 'Equipo humano', desc: 'Profesionales que te acompañan en cada paso de tu atención.' },
-      { icon: 'i-lucide-shield-check', name: 'Seguridad del paciente', desc: 'Protocolos rigurosos en cada procedimiento.' }
+      { icon: 'i-lucide-users', name: 'Medicina especializada', desc: '17 especialidades: pediatría, cardiología, neurología y más.' },
+      { icon: 'i-lucide-baby', name: 'Pediátrico', desc: 'Pediatría, cardiología y neurología pediátrica.' },
+      { icon: 'i-lucide-utensils', name: 'Nutrición', desc: 'Orientación nutricional complementaria a tu tratamiento.' }
     ],
     stats: [
-      { value: '4', label: 'Valores que nos guían' }
+      { value: '17', label: 'Especialidades' },
+      { value: '4', label: 'Compromisos de calidad' }
     ],
     ctas: [
       { label: 'Solicitar cita', icon: 'i-lucide-calendar', href: '#contacto', variant: 'solid' }
@@ -89,41 +90,40 @@ const scenes = [
   {
     step: '05',
     title: 'En buenas manos',
-    description: 'Especialistas, tecnología y compromiso trabajando juntos por un diagnóstico preciso y un plan efectivo.',
-    service: 'Laboratorio + Imágenes + Especialidades',
+    description: 'Especialistas, tecnología y altos estándares: laboratorio e imagenología de I, II y III nivel para un diagnóstico preciso.',
+    service: 'Laboratorio e imagenología',
     serviceIcon: 'i-lucide-microscope',
     image: '/img/FOTO 31.jpeg',
     overlay: 'from-clinic-primary/70 via-clinic-primary/30 to-clinic-dark/50',
     accent: 'bg-clinic-secondary/20 border-clinic-secondary/30 text-clinic-secondary',
-    objective: 'Brindar diagnósticos precisos y planes de tratamiento efectivos con tecnología de vanguardia y especialistas de alto nivel.',
+    objective: 'Brindar diagnósticos precisos en laboratorio e imágenes de I, II y III nivel, dentro de un marco de seguridad y confianza.',
     services: [
-      { icon: 'i-lucide-flask-conical', name: 'Laboratorio clínico', desc: 'Análisis confiables para decisiones médicas seguras.' },
-      { icon: 'i-lucide-scan', name: 'Imágenes diagnósticas', desc: 'Ecografías y estudios con equipos de última generación.' },
-      { icon: 'i-lucide-heart-pulse', name: 'Especialidades médicas', desc: 'Cardiología, pediatría, neurología, gastroenterología y más.' }
+      { icon: 'i-lucide-flask-conical', name: 'Laboratorio clínico', desc: 'Toma de muestras y laboratorio de I, II y III nivel.' },
+      { icon: 'i-lucide-scan', name: 'Imagenología', desc: 'Estudios de imágenes de I, II y III nivel.' },
+      { icon: 'i-lucide-monitor', name: 'Imágenes no ionizantes', desc: 'Estudios seguros con tecnología de precisión.' }
     ],
     stats: [
-      { value: '16', label: 'Especialidades' },
-      { value: '3', label: 'Líneas diagnósticas' }
+      { value: 'I, II y III', label: 'Lab. e imágenes' }
     ],
     ctas: []
   },
   {
     step: '06',
     title: 'De vuelta a casa',
-    description: 'Tu recuperación continúa con atención personalizada en tu hogar y seguimiento constante.',
+    description: 'Tu hogar es el lugar ideal para tu recuperación: cuidamos tu bienestar con un plan de manejo ambulatorio complementario.',
     service: 'Atención domiciliaria',
     serviceIcon: 'i-lucide-home',
     image: '/img/FOTO 7.jpeg',
     overlay: 'from-clinic-dark/60 via-clinic-secondary/20 to-clinic-dark/40',
     accent: 'bg-clinic-secondary/20 border-clinic-secondary/30 text-clinic-secondary',
-    objective: 'Asegurar que la recuperación continúe con la misma calidad en el hogar, mediante cuidado personalizado y seguimiento oportuno.',
+    objective: 'Respaldar tu bienestar en casa con un plan de manejo ambulatorio complementario y un equipo que acompaña a tu familia en cada paso.',
     services: [
-      { icon: 'i-lucide-home', name: 'Atención domiciliaria', desc: 'Equipo profesional en tu hogar con plan de manejo.' },
-      { icon: 'i-lucide-phone', name: 'Seguimiento', desc: 'Controles y orientación médica después de tu alta.' },
-      { icon: 'i-lucide-calendar-check', name: 'Citas de control', desc: 'Revaloraciones para cuidar tu evolución.' }
+      { icon: 'i-lucide-home', name: 'Atención domiciliaria Home-Care', desc: 'Profesionales humanizados en tu hogar, en cada paso del proceso.' },
+      { icon: 'i-lucide-bed', name: 'Hospitalización domiciliaria', desc: 'Pacientes crónicos, con y sin ventilador.' },
+      { icon: 'i-lucide-heart-handshake', name: 'Dolor y cuidados paliativos', desc: 'Alivio y acompañamiento con foco en tu calidad de vida.' }
     ],
     stats: [
-      { value: '24/7', label: 'Transporte de apoyo' }
+      { value: '2028', label: 'Meta de acreditación' }
     ],
     ctas: [
       { label: 'Conocer servicios', icon: 'i-lucide-arrow-right', href: '#servicios', variant: 'solid' },
@@ -132,14 +132,163 @@ const scenes = [
   }
 ]
 
+const AUTO_PLAY_DELAY = 5000
+const WHEEL_GESTURE_GAP = 250
+const INPUT_SETTLE_MS = 500
+const NAV_KEYS = new Set(['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' ', 'Spacebar'])
+
 const activeScene = ref(0)
-const scrollActivate = ref(true)
+const autoPlay = ref(true)
+const sectionInView = ref(false)
 const progress = computed(() => activeScene.value / (scenes.length - 1))
 
-let observer
+let sceneObserver
+let autoTimer = null
+let programmatic = false
+let programmaticFallback = null
+let lastWheelAt = 0
+let lastInputAt = 0
+let wheelGestureNavigating = false
+
+function cancelAutoPlay() {
+  autoPlay.value = false
+  clearTimeout(autoTimer)
+  autoTimer = null
+}
+
+function scheduleAutoPlay() {
+  clearTimeout(autoTimer)
+  autoTimer = null
+
+  if (!autoPlay.value || !sectionInView.value) return
+
+  if (activeScene.value >= scenes.length - 1) {
+    autoPlay.value = false
+    return
+  }
+
+  autoTimer = setTimeout(() => {
+    autoTimer = null
+    if (!autoPlay.value || !sectionInView.value) return
+    if (programmatic || Date.now() - lastInputAt < INPUT_SETTLE_MS) {
+      scheduleAutoPlay()
+      return
+    }
+    goToScene(activeScene.value + 1)
+  }, AUTO_PLAY_DELAY)
+}
+
+function toggleAutoPlay() {
+  if (autoPlay.value) {
+    cancelAutoPlay()
+    return
+  }
+
+  autoPlay.value = true
+
+  if (activeScene.value >= scenes.length - 1) {
+    goToScene(0)
+    return
+  }
+
+  scheduleAutoPlay()
+}
+
+function endProgrammaticScroll() {
+  programmatic = false
+  clearTimeout(programmaticFallback)
+  programmaticFallback = null
+}
+
+function goToScene(index) {
+  const marker = document.getElementById(`scene-${index}`)
+  if (!marker) return
+
+  clearTimeout(autoTimer)
+  autoTimer = null
+
+  const top = marker.getBoundingClientRect().top + window.scrollY
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const distance = Math.abs(top - window.scrollY)
+  const estimate = prefersReducedMotion
+    ? 100
+    : Math.min(5000, 500 + (distance / Math.max(window.innerHeight, 1)) * 500)
+
+  programmatic = true
+  clearTimeout(programmaticFallback)
+  programmaticFallback = setTimeout(endProgrammaticScroll, estimate + 1500)
+
+  window.scrollTo({
+    top,
+    behavior: prefersReducedMotion ? 'auto' : 'smooth'
+  })
+}
+
+function updateSectionInView() {
+  const section = document.getElementById('narrativa')
+  if (!section) return
+
+  const rect = section.getBoundingClientRect()
+  sectionInView.value = rect.top <= 2 && rect.bottom >= window.innerHeight - 2
+}
+
+function handleScroll() {
+  updateSectionInView()
+}
+
+function handleScrollEnd() {
+  if (programmatic) endProgrammaticScroll()
+}
+
+function handleWheel() {
+  const now = Date.now()
+  if (now - lastWheelAt > WHEEL_GESTURE_GAP) {
+    wheelGestureNavigating = !sectionInView.value
+  }
+  lastWheelAt = now
+  lastInputAt = now
+
+  if (wheelGestureNavigating) return
+  if (sectionInView.value) cancelAutoPlay()
+}
+
+function handleTouchstart(event) {
+  lastInputAt = Date.now()
+  if (event.target?.closest?.('button, a')) return
+  if (sectionInView.value) cancelAutoPlay()
+}
+
+function handleKeydown(event) {
+  if (event.target?.closest?.('input, textarea, select, [contenteditable], button, a')) return
+  if (!NAV_KEYS.has(event.key)) return
+  lastInputAt = Date.now()
+  if (sectionInView.value) cancelAutoPlay()
+}
+
+function handleVisibilityChange() {
+  if (document.hidden) {
+    clearTimeout(autoTimer)
+    autoTimer = null
+    return
+  }
+  if (sectionInView.value) scheduleAutoPlay()
+}
+
+watch(activeScene, () => {
+  if (autoPlay.value) scheduleAutoPlay()
+})
+
+watch(sectionInView, (visible) => {
+  if (visible) {
+    scheduleAutoPlay()
+    return
+  }
+  clearTimeout(autoTimer)
+  autoTimer = null
+})
 
 onMounted(() => {
-  observer = new IntersectionObserver(
+  sceneObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return
@@ -154,53 +303,37 @@ onMounted(() => {
 
   document
     .querySelectorAll('#narrativa [id^="scene-"]')
-    .forEach(el => observer.observe(el))
-  timeChange(0)
+    .forEach(el => sceneObserver.observe(el))
 
+  window.addEventListener('scroll', handleScroll, { passive: true })
+  window.addEventListener('scrollend', handleScrollEnd, { passive: true })
+  window.addEventListener('wheel', handleWheel, { passive: true, capture: true })
+  window.addEventListener('touchstart', handleTouchstart, { passive: true, capture: true })
+  window.addEventListener('keydown', handleKeydown, { passive: true })
+  document.addEventListener('visibilitychange', handleVisibilityChange)
+
+  updateSectionInView()
+  if (sectionInView.value) scheduleAutoPlay()
 })
-
-function handleUserInteraction() {
-  if(activeScene.value < 2) return
-  scrollActivate.value = false
-}
-
-onMounted(() => {
-  window.addEventListener('wheel', handleUserInteraction, { passive: true })
-  window.addEventListener('touchmove', handleUserInteraction, { passive: true })
-})
-
 
 onBeforeUnmount(() => {
-  window.removeEventListener('wheel', handleUserInteraction)
-  window.removeEventListener('touchmove', handleUserInteraction)
-  observer?.disconnect()
+  sceneObserver?.disconnect()
+  clearTimeout(autoTimer)
+  clearTimeout(programmaticFallback)
+  window.removeEventListener('scroll', handleScroll)
+  window.removeEventListener('scrollend', handleScrollEnd)
+  window.removeEventListener('wheel', handleWheel, { capture: true })
+  window.removeEventListener('touchstart', handleTouchstart, { capture: true })
+  window.removeEventListener('keydown', handleKeydown)
+  document.removeEventListener('visibilitychange', handleVisibilityChange)
 })
-
-function scrollToScene(accion) {
-  const section = document.getElementById('narrativa')
-  if (!section || (activeScene.value >= 5 && accion === 'mas')) return
-  const sceneHeight = section.offsetHeight / (scenes.length + 1)
-  const target = section.offsetTop + sceneHeight * (accion === 'mas' ? activeScene.value + 2 : activeScene.value)
-  window.scrollTo({ top: target, behavior: 'smooth' })
-}
-
-watch(activeScene, (scene) => {
-  timeChange(scene)
-})
-
-function timeChange (scene) {
-  if (scene >= scenes.length - 1) return
-  if (scene < 5 && scrollActivate.value) {
-    setTimeout(() => scrollToScene('mas'), 5000)
-  }
-}
 </script>
 
 <template>
   <section
     id="narrativa"
     class="relative"
-    :style="{ height: `${(scenes.length + 1) * 100}vh` }"
+    :style="{ height: `${scenes.length * 100}vh` }"
   >
     <div class="sticky top-0 h-screen overflow-hidden">
       <div class="absolute inset-0">
@@ -230,6 +363,7 @@ function timeChange (scene) {
         :scenes="scenes"
         :active-scene="activeScene"
         :progress="progress"
+        @navigate="goToScene"
       /> -->
 
       <div class="relative z-10 h-full flex items-center">
@@ -380,28 +514,45 @@ function timeChange (scene) {
       </div>
 
       <div class="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2">
-        <div class="flex gap-3">
-          <UButton icon="i-lucide-arrow-left" @click="scrollToScene('menos')" variant="soft"/>
-          <div class="flex flex-col justify-center items-center">
-            <span class="text-white/40 text-xs font-medium tracking-wider uppercase">
-              Escena {{ activeScene + 1 }} / {{ scenes.length }}
-            </span>
-            <div class="flex gap-1.5">
-              <div
-                v-for="(_, index) in scenes"
-                :key="index"
-                :class="[
-                  'h-1 rounded-full transition-all duration-500',
-                  index === activeScene
-                    ? 'w-8 bg-clinic-secondary'
-                    : index < activeScene
-                      ? 'w-2 bg-clinic-secondary/40'
-                      : 'w-2 bg-white/15'
-                ]"
-              />
-            </div>
+        <div class="flex items-center gap-3">
+          <button
+            type="button"
+            class="w-8 h-8 rounded-full border border-white/20 bg-white/10 hover:bg-white/20 text-white/80 hover:text-white flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-clinic-secondary"
+            :aria-label="autoPlay ? 'Pausar recorrido automático' : 'Reproducir recorrido automático'"
+            @click="toggleAutoPlay"
+          >
+            <UIcon
+              :name="autoPlay ? 'i-lucide-pause' : 'i-lucide-play'"
+              class="w-3.5 h-3.5"
+            />
+          </button>
+          <span class="text-white/40 text-xs font-medium tracking-wider uppercase">
+            Escena {{ activeScene + 1 }} / {{ scenes.length }}
+          </span>
+          <div
+            v-if="autoPlay && sectionInView"
+            class="h-0.5 w-12 rounded-full bg-white/10 overflow-hidden"
+          >
+            <div
+              :key="`auto-${activeScene}`"
+              class="h-full bg-clinic-secondary rounded-full auto-advance"
+              :style="{ animationDuration: `${AUTO_PLAY_DELAY}ms` }"
+            />
           </div>
-          <UButton icon="i-lucide-arrow-right" @click="scrollToScene('mas')" variant="soft"/>
+        </div>
+        <div class="flex gap-1.5">
+          <div
+            v-for="(_, index) in scenes"
+            :key="index"
+            :class="[
+              'h-1 rounded-full transition-all duration-500',
+              index === activeScene
+                ? 'w-8 bg-clinic-secondary'
+                : index < activeScene
+                  ? 'w-2 bg-clinic-secondary/40'
+                  : 'w-2 bg-white/15'
+            ]"
+          />
         </div>
       </div>
     </div>
@@ -410,7 +561,8 @@ function timeChange (scene) {
       v-for="(scene, index) in scenes"
       :id="`scene-${index}`"
       :key="`marker-${index}`"
-      class="h-screen"
+      class="absolute left-0 w-full h-screen pointer-events-none"
+      :style="{ top: `${index * 100}vh` }"
       aria-hidden="true"
     />
   </section>
@@ -446,6 +598,21 @@ function timeChange (scene) {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.auto-advance {
+  animation-name: autoAdvance;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes autoAdvance {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
   }
 }
 
